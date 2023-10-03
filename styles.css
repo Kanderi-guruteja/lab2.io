@@ -116,36 +116,37 @@
 
 #grid-section3 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* 2 columns with 1:2 ratio */
-  grid-template-rows: auto 1fr auto; /* Rows with auto, 1 fraction, and auto height */
+  grid-template-columns: 2fr 1fr; /* 2 columns with 2:1 ratio */
+  grid-template-rows: 100px 300px 100px; /* Rows with specified heights */
   grid-gap: 10px; /* Gap between grid items */
 }
 
 #grid-section3 .box1 {
   background-color: #ccc;
-  grid-column: 1 / 3; /* Span both columns */
-  grid-row: 1 / 2; /* Span the first row */
+  grid-column: 1 / 3; /* Span 2 columns */
+  grid-row: 1 / 2; /* Span from row 1 to row 2 */
 }
 
 #grid-section3 .box2 {
   background-color: #ccc;
   grid-column: 2 / 3; /* Span the second column */
-  grid-row: 2 / 3; /* Span the second row */
+  grid-row: 2 / 3; /* Span from row 2 to row 3 */
 }
 
 #grid-section3 .box3 {
   background-color: #ccc;
-  grid-column: 1 / 2; /* Span the first column */
-  grid-row: 2 / 3; /* Span the second row */
+  grid-column: 1 / 2; /* Span from column 1 to column 2 */
+  grid-row: 2 / 3; /* Span from row 2 to row 3 */
 }
 
 #grid-section3 .box4 {
   background-color: #ccc;
-  grid-column: 1 / 3; /* Span both columns */
-  grid-row: 3 / 4; /* Span the third row */
+  grid-column: 1 / 3; /* Span 2 columns */
+  grid-row: 3 / 4; /* Span from row 3 to row 4 */
 }
 
 /* end Grid Part 3 */
+
 
 
 #transition-section .box a {
