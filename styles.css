@@ -143,7 +143,6 @@
 
 /* end Grid Part 3 */
 
-
 #transition-section .box a {
   display: inline-block;
   background-color: #ccc;
@@ -157,7 +156,11 @@
   background-color: #cc0000;
   color: #fff;
   transition: background-color 0.5s ease, color 0.5s ease; /* Add transitions for both properties */
-  transition-delay: 3s; /* Reset the delay for hover state */
 }
+
+#transition-section .box a:not(:hover) {
+  transition: background-color 3s ease, color 3s ease; /* Longer duration for the return transition */
+}
+
 
 
