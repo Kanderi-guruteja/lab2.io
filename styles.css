@@ -28,8 +28,10 @@
 
 #flex-section3 .box {
   display: flex; /* Make the .box a flex container */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center the content horizontally */
+  align-content: center; /* Center the content vertically */
+  height: 300px; /* Specify a fixed height for the box */
 }
 
 #flex-section3 .tags ul {
@@ -74,17 +76,17 @@
 }
 
 #grid-section2 .gridboxblue {
-  background-color: blue; /* Blue background color */
-  grid-column: 1 / 4; /* Span 3 columns */
-  grid-row: 1 / 4; /* Span 3 rows */
+  background-color: rgba(0, 0, 255, 0.5); /* Blue color with transparency */
+  grid-column: 2 / 4; /* Span from column 2 to column 4 */
+  grid-row: 1 / 4; /* Span from row 1 to row 4 */
   z-index: 1; /* Bring to front */
   position: relative; /* Set position to relative for z-index to work */
 }
 
 #grid-section2 .gridboxred {
-  background-color: red; /* Red background color */
-  grid-column: 2 / 3; /* Start at column 2 and end at column 3 */
-  grid-row: 2 / 3; /* Start at row 2 and end at row 3 */
+  background-color: rgba(255, 0, 0, 0.5); /* Red color with transparency */
+  grid-column: 1 / 3; /* Span from column 1 to column 3 */
+  grid-row: 2 / 3; /* Span from row 2 to row 3 */
   z-index: 0; /* Send to back (default) */
 }
 
@@ -111,13 +113,13 @@
 
 #grid-section3 .box3 {
   background-color: #ccc; /* Background color for box3 */
-  grid-row: 2 / 3; /* Start at row 2 and end at row 3 */
+  grid-row: 2 / 3; /* Span from row 2 to row 3 */
 }
 
 #grid-section3 .box4 {
   background-color: #ccc; /* Background color for box4 */
   grid-column: 1 / 3; /* Span 2 columns */
-  grid-row: 3 / 4; /* Start at row 3 and end at row 4 */
+  grid-row: 3 / 4; /* Span from row 3 to row 4 */
 }
 
 /* end Grid Part 3 */
@@ -136,7 +138,4 @@
 #transition-section .box a:hover {
   background-color: #cc0000;
   color: #fff;
-  transition: background-color 3s ease, color 3s ease; /* Add transitions with 3s delay */
-}
-
-/* end Transition Part */
+  transition: background-color 0.5s ease, color 0.5
