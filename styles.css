@@ -157,7 +157,7 @@
   background-color: #cc0000;
   color: #fff;
   transition: background-color 0.5s ease, color 0.5s ease; /* Add transitions for both properties */
-  transition-delay: 0s; /* Reset the delay for hover state */
+  transition-delay: 3s; /* Reset the delay for hover state */
 }
 
 
