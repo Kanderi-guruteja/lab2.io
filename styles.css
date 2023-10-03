@@ -21,6 +21,17 @@
   flex: 1; /* Each item takes equal space */
 }
 
+#flex-section2 .item1 {
+  /* No need to change item 1 */
+}
+
+#flex-section2 .item2 {
+  order: 3; /* Change order to 3 to move it to the end */
+}
+
+#flex-section2 .item3 {
+  order: 2; /* Change order to 2 to move it between item 1 and item 2 */
+}
 /* end Flexbox Part 2 */
 
 
