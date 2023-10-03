@@ -149,6 +149,6 @@
 #transition-section .box a:hover {
   background-color: #cc0000;
   color: #fff;
-  transition: background-color 3s ease 3s, color 3s ease 3s; /* Add 3s delay to transitions */
+  transition: background-color 8s ease 8s, color 8s ease 8s; /* Add 3s delay to transitions */
 }
 
