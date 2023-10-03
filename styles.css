@@ -144,8 +144,6 @@
 /* end Grid Part 3 */
 
 
-/* Transition Part */
-
 #transition-section .box a {
   display: inline-block;
   background-color: #ccc;
@@ -158,8 +156,8 @@
 #transition-section .box a:hover {
   background-color: #cc0000;
   color: #fff;
-  transition-delay: 3s; /* Delay the hover state transition for 3 seconds */
+  transition: background-color 0.5s ease, color 0.5s ease; /* Add transitions for both properties */
+  transition-delay: 0s; /* Reset the delay for hover state */
 }
 
-/* end Transition Part */
 
