@@ -49,6 +49,7 @@
   display: flex; /* Make the list items a flex container */
   list-style: none; /* Remove default list bullets */
   padding: 0; /* Remove default padding */
+  flex-wrap: wrap; /* Wrap tags to the next line when there's not enough space */
 }
 
 #flex-section3 .tags li {
